@@ -1,0 +1,87 @@
+
+
+/** HEADERS **/
+
+.credData_header {
+    display: contents;
+    min-width: 500px;
+}
+
+.credData_header .headerName {
+    /*padding: 0 0 4px 0;*/
+    position: sticky;
+    top: 0;
+    padding-bottom: 8px;
+    background-color: #fff;
+    margin-top: auto;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.credData_header .headerEndCap {
+    position: sticky;
+    top: 0;
+    padding-bottom: 8px;
+    width: 200px;
+    background: #fff;
+}
+
+/** ROWS **/
+
+.credData_row {
+    display: contents;
+    padding: 3px 0 3px 0;
+}
+
+.credData_row.hidden {
+    display: none;
+}
+
+
+/** CELLS **/
+
+.company {
+    width: 200px;
+    /*height: 24px;*/
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.credData_cell.status {
+    width: 16px;
+    height: 16px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credData_cell.NONE {
+    /*background: #fff;*/
+}
+
+.credData_cell.CHECKLISTED {
+    background: #66def7;
+}
+
+.credData_cell.PENDING {
+    background: #9225c1;
+}
+
+.credData_cell.EXPIRED {
+    background: #ff1b2f;
+}
+
+.credData_cell.EXPIRING {
+    background: #c9b60b;
+}
+
+.credData_cell.VERIFIED {
+    background: #87ad00;
+}

@@ -1,0 +1,23 @@
+/*
+
+	Input types
+		text
+		checkbox
+		radio
+		number
+		date
+		time
+		datetime
+		button
+
+
+
+
+
+
+
+
+
+
+
+ */

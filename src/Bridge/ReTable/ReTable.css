@@ -1,0 +1,98 @@
+
+
+.retable {
+    display: grid;
+}
+
+/**  HEADERS  **/
+
+/*.header {*/
+/*    !*padding: 24px 16px;*!*/
+/*    padding: 0;*/
+/*    margin-bottom: 12px;*/
+/*    !*font-size: large;*!*/
+/*    font-weight: bold;*/
+/*    color: #373737;*/
+/*}*/
+
+/*.header.-compact {*/
+/*    padding: 0;*/
+/*}*/
+
+/** ROWS **/
+
+.something {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    min-width: 0;
+    flex: 0 0 auto;
+}
+
+.retable_row {
+    display: contents;
+}
+
+.retable_row.hidden {
+    display: none;
+}
+
+.retable_row > div {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.retable_row:hover > div {
+    background-color: #eaeaea;
+}
+
+
+
+
+/**  CELLS  **/
+
+.retable .cell {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    min-width: 0;
+    flex: 0 0 auto;
+
+    padding: 2px 2px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.retable .cell.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.-compact {
+    padding: 0 0;
+}
+
+.cell.-firstCol {
+    /*padding-left: 32px;*/
+}
+
+.cell.-lastCol {
+    /*padding-right: 32px;*/
+}
+
+.retable.-stripes .cell.-odd {
+    background: rgba(0,0,0,0.06);
+}
+
+.retable .cell.-danger,
+.retable .cell.-danger.-odd {
+    background: rgba(200, 6, 6, 0.17);
+}
+
+.retable .cell.-changed,
+.retable .cell.-changed.-odd {
+    background: rgba(68, 153, 200, 0.28);
+}
+
+.retable .cell.-odd:hover,
+.retable .cell.-even:hover {
+    background: rgba(0,0,0,0.12);
+}

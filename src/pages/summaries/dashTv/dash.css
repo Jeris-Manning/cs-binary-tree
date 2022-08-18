@@ -1,0 +1,26 @@
+
+.shake .pointer path{
+    animation-name: shake_anim;
+    animation-duration: 150ms;
+    animation-iteration-count: infinite;
+    /*transform-origin: center center;*/
+    animation-play-state: running;
+}
+
+@keyframes shake_anim {
+    0% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(89deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(88deg);
+    }
+    100% {
+        transform: rotate(91deg);
+    }
+}

@@ -1,0 +1,16 @@
+
+div.phone_preview::-webkit-scrollbar {
+    width: 0;
+}
+
+.phone_preview hr {
+    border-top-color: #000;
+}
+
+.phone_preview h1 {
+    border-bottom-color: #000;
+}
+
+.phone_preview h2 {
+    border-bottom-color: #000;
+}

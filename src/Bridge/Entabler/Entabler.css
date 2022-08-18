@@ -1,0 +1,82 @@
+
+
+.entabler {
+    display: grid;
+}
+
+/**  HEADERS  **/
+
+/*.header {*/
+/*    !*padding: 24px 16px;*!*/
+/*    padding: 0;*/
+/*    margin-bottom: 12px;*/
+/*    !*font-size: large;*!*/
+/*    font-weight: bold;*/
+/*    color: #373737;*/
+/*}*/
+
+/*.header.-compact {*/
+/*    padding: 0;*/
+/*}*/
+
+/** ROWS **/
+
+.entabler_row {
+    display: contents;
+}
+
+.entabler_row.hidden {
+    display: none;
+}
+
+.entabler_row > div {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.entabler_row:hover > div {
+    background-color: #eaeaea;
+}
+
+
+
+
+/**  CELLS  **/
+
+.entabler .cell {
+    /*padding: 4px 8px;*/
+    padding: 2px 2px;
+    /*padding: 0;*/
+    min-width: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cell.-compact {
+    padding: 0 0;
+}
+
+.cell.-firstCol {
+    /*padding-left: 32px;*/
+}
+
+.cell.-lastCol {
+    /*padding-right: 32px;*/
+}
+
+.entabler.-stripes .cell.-odd {
+    background: rgba(0,0,0,0.06);
+}
+
+.entabler .cell.-danger,
+.entabler .cell.-danger.-odd {
+    background: rgba(200, 6, 6, 0.17);
+}
+
+.entabler .cell.-changed,
+.entabler .cell.-changed.-odd {
+    background: rgba(68, 153, 200, 0.28);
+}
+
+.entabler .cell.-odd:hover,
+.entabler .cell.-even:hover {
+    background: rgba(0,0,0,0.12);
+}

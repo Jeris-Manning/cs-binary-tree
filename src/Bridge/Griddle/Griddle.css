@@ -1,0 +1,70 @@
+
+
+.griddle {
+    display: grid;
+}
+
+/**  HEADERS  **/
+
+.header {
+    padding: 24px 16px;
+    /*font-size: large;*/
+    font-weight: bold;
+    color: #373737;
+}
+
+.header.-first {
+    /*padding-left: 32px;*/
+}
+
+.header.-last {
+    /*padding-right: 32px;*/
+}
+
+.header.-compact {
+    padding: 0;
+}
+
+
+/**  CELLS  **/
+
+.cell {
+    padding: 4px 16px;
+    min-width: 0;
+}
+
+.cell.-compact {
+    padding: 0 0;
+}
+
+.cell.-firstCol {
+    /*padding-left: 32px;*/
+}
+
+.cell.-lastCol {
+    /*padding-right: 32px;*/
+}
+
+.griddle.-stripes .cell.-odd {
+    background: rgba(0,0,0,0.06);
+}
+
+.griddle .cell.-danger,
+.griddle .cell.-danger.-odd {
+    background: rgba(200, 6, 6, 0.17);
+}
+
+.griddle .cell.-changed,
+.griddle .cell.-changed.-odd {
+    background: rgba(68, 153, 200, 0.28);
+}
+
+.griddle .cell.-odd:hover,
+.griddle .cell.-even:hover {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+
+/*.griddle .SOMETHING_ROW :hover {*/
+    /*background: rgba(0,0,0,0.12);*/
+/*}*/

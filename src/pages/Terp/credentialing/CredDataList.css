@@ -1,0 +1,92 @@
+
+
+/** HEADERS **/
+
+.credData_header {
+    display: contents;
+}
+
+.credData_header .headerName {
+    /*padding: 0 0 4px 0;*/
+    position: sticky;
+    top: 0;
+    padding-bottom: 8px;
+    background-color: #fff;
+    margin-top: auto;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/** ROWS **/
+
+.credData_row {
+    display: contents;
+    padding: 3px 0 3px 0;
+}
+
+.credData_row.hidden {
+    display: none;
+}
+
+/*.credData_row:hover > div {*/
+/*    background-color: #eaeaea;*/
+/*}*/
+
+/** CELLS **/
+
+.terp {
+    width: 170px;
+    /*height: 24px;*/
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.terpName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.credData_cell.status {
+    width: 24px;
+    height: 24px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.credData_cell .statusIcon {*/
+/*    margin: auto;*/
+/*}*/
+
+.credData_cell.NONE {
+    /*background: #fff;*/
+}
+
+.credData_cell.CHECKLISTED {
+    /*background: #269db5;*/
+    background: #66def7;
+}
+
+.credData_cell.PENDING {
+    background: #9225c1;
+}
+
+.credData_cell.EXPIRED {
+    background: #ff1b2f;
+}
+
+.credData_cell.EXPIRING {
+    background: #c9b60b;
+}
+
+.credData_cell.VERIFIED {
+    background: #87ad00;
+}

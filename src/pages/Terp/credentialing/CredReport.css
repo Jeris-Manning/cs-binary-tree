@@ -1,0 +1,130 @@
+
+
+/** HEADERS **/
+
+.credReport_header {
+    display: contents;
+}
+
+.credReport_header .headerName {
+    /*padding: 0 0 4px 0;*/
+    position: sticky;
+    top: 0;
+    padding-bottom: 8px;
+    background-color: #fff;
+    margin-top: auto;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/** ROWS **/
+
+.credReport_row {
+    display: contents;
+    padding: 3px 0 3px 0;
+}
+
+.credReport_row.hidden {
+    display: none;
+}
+
+/*.credReport_row:hover > div {*/
+/*    background-color: #eaeaea;*/
+/*}*/
+
+/** CELLS **/
+
+.terp {
+    width: 140px;
+    /*height: 24px;*/
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.terpName {
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.credReport_cell.terpStat {
+    height: 14px;
+    padding: 2px 4px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    color: #454545;
+}
+
+.credReport_cell.terpRate {
+    height: 14px;
+    padding: 2px 4px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    color: #454545;
+}
+
+.credReport_cell.terpStat.missing {
+    font-weight: bold;
+    color: #cb1a1a;
+}
+
+.credReport_cell.status {
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #454545;
+}
+
+/*.credReport_cell .statusIcon {*/
+/*    margin: auto;*/
+/*}*/
+
+.credReport_cell.NONE {
+    /*background: #fff;*/
+}
+
+.credReport_cell.CHECKLISTED {
+    /*background: #269db5;*/
+    /*color: #ffffff;*/
+    /*background: #66def7;*/
+    background: #ff9a1f;
+}
+
+.credReport_cell.PENDING {
+    background: #b757e0;
+}
+
+.credReport_cell.EXPIRED {
+    background: #ff1b2f;
+}
+
+.credReport_cell.VERIFIED {
+    background: #87ad00;
+    font-size: 12px;
+}
+
+.credReport_cell.HAS {
+    background: #bde4ef;
+}
